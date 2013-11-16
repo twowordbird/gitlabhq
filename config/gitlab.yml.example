@@ -137,16 +137,13 @@ production: &base
     # Uncomment the following lines and fill in the data of the auth provider you want to use
     # If your favorite auth provider is not listed you can use others:
     # see https://github.com/gitlabhq/gitlab-public-wiki/wiki/Working-custom-omniauth-provider-configurations
-    # The 'app_id' and 'app_secret' parameters are always passed as the first two
-    # arguments, followed by optional 'args' which can be either a hash or an array.
+    # The parameters in reqargs are always passed as the first arguments,
+    # followed by optional 'optargs' which can be either a hash or an array.
     providers:
-      # - { name: 'google_oauth2', app_id: 'YOUR APP ID',
-      #     app_secret: 'YOUR APP SECRET',
-      #     args: { access_type: 'offline', approval_prompt: '' } }
-      # - { name: 'twitter', app_id: 'YOUR APP ID',
-      #     app_secret: 'YOUR APP SECRET'}
-      # - { name: 'github', app_id: 'YOUR APP ID',
-      #     app_secret: 'YOUR APP SECRET' }
+      # - { name: 'google_oauth2', reqargs: ['YOUR APP ID', 'YOUR APP SECRET'],
+      #     optargs: { access_type: 'offline', approval_prompt: '' } }
+      # - { name: 'twitter', reqargs: ['YOUR APP ID', 'YOUR APP SECRET'] }
+      # - { name: 'github', reqargs: ['YOUR APP ID', 'YOUR APP SECRET'] }
 
 
 

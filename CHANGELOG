@@ -18,6 +18,7 @@ v 6.3.0
   - Extended html titles
   - API: create/update repo files
   - Admin can transfer project to any namespace
+  - Improved OmniAuth support in gitlab.yml
 
 v 6.2.0
   - Public project pages are now visible to everyone (files, issues, wik, etc.)
